@@ -1,16 +1,5 @@
 def find_number(line):
-    numwords = {
-        'zero': 0,
-        'one': 1,
-        'two': 2,
-        'three': 3,
-        'four': 4,
-        'five': 5,
-        'six': 6,
-        'seven': 7,
-        'eight': 8,
-        'nine': 9,
-    }
+    numwords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
     nums = []
     test = ""
     for x in line:
@@ -21,7 +10,7 @@ def find_number(line):
         inner = test
         while inner != "":
             if inner in numwords:
-                nums.append(numwords[inner])
+                nums.append(numwords.index(inner))
                 break
             else:
                 inner = inner[1:]
