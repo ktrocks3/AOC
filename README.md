@@ -16,7 +16,8 @@ This repo isn't just about solving puzzles; it's about spreading holiday joy thr
 
 ## 📅 Advent Progress  
 - [x] Day 1: 🎅 Complete!  
-- [x] Day 2: Loading...  
+- [x] Day 2: 🎅 Complete!  
+- [ ] Day 3: Loading...  
 _(Check back daily for updates!)_  
 
 ## 🎄 Why Do This?  
