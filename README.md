@@ -15,9 +15,10 @@ This repo isn't just about solving puzzles; it's about spreading holiday joy thr
 3. Star this repo ⭐ if you like what you see (Santa says sharing is caring!).  
 
 ## 📅 Advent Progress  
-- [x] Day 1: 🎅 Complete!  
-- [x] Day 2: 🎅 Complete!  
-- [ ] Day 3: Loading...  
+- [x] Day 1: 🎅 Complete! 
+- [x] Day 2: 🌟 Complete!  
+- [x] Day 3: ❄️ Complete!  
+- [ ] Day 4: 🎁 Loading...  
 _(Check back daily for updates!)_  
 
 ## 🎄 Why Do This?  
