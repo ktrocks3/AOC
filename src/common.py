@@ -6,7 +6,7 @@ year = datetime.datetime.today().year
 day = (datetime.datetime.today() - datetime.datetime(2024, 12, 1)).days + 1
 
 # Create the directory if it doesn't exist
-directory = f'{year}/star{day}'
+directory = f'{day}. {year}/star{day}'
 os.makedirs(directory, exist_ok=True)
 
 # Now, open the file and write to it
