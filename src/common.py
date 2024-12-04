@@ -6,10 +6,12 @@ year = datetime.datetime.today().year
 day = (datetime.datetime.today() - datetime.datetime(2024, 12, 1)).days + 1
 
 # Create the directory if it doesn't exist
-directory = f'{day}. {year}/star{day}'
+directory = f'{year}/{day}. Star-{day}'
 os.makedirs(directory, exist_ok=True)
 
 # Now, open the file and write to it
 file_path = f'{directory}/star{day}.py'
 with open(file_path, 'w') as f:
     f.write(''.join(open('template').readlines()))
+with open(f'{directory}/example.txt', 'w') as f:
+    f.write('')
