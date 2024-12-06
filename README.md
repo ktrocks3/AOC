@@ -20,8 +20,10 @@ This repo isn't just about solving puzzles; it's about spreading holiday joy thr
 - [x] Day 3: ❄️ Complete!  
 - [x] Day 4: 🎁 Complete!  
 - [x] Day 5: 🎄 Complete!  
-- [ ] Day 6: 🕯️ Loading...  
-_(Check back daily for updates!)_
+- [x] Day 6: 🕯️ Complete!  
+- [ ] Day 7: ✨ Loading...  
+_(Check back daily for updates!)_  
+
 
 ## 🎄 Why Do This?  
 - Spread some festive coding vibes.  
