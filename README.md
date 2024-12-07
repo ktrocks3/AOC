@@ -21,7 +21,8 @@ This repo isn't just about solving puzzles; it's about spreading holiday joy thr
 - [x] Day 4: 🎁 Complete!  
 - [x] Day 5: 🎄 Complete!  
 - [x] Day 6: 🕯️ Complete!  
-- [ ] Day 7: ✨ Loading...  
+- [x] Day 7: ✨ Complete!  
+- [ ] Day 8: 🌌 Loading...  
 _(Check back daily for updates!)_  
 
 
