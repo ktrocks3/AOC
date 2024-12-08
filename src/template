@@ -5,11 +5,11 @@ def common(filename):
 
 
 def part1(filename):
-    return ""
+    return
 
 
 def part2(filename):
-    return ""
+    return
 
 
 if __name__ == '__main__':
