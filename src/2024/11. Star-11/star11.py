@@ -14,13 +14,13 @@ def part1(filename, blinks):
         for i in range(len(stones)):
             if stones[i] == 0:
                 ns.append(1)
-            elif len(str(stones[i]))%2 == 0:
+            elif len(str(stones[i])) % 2 == 0:
                 stones[i] = str(stones[i])
-                l, r = stones[i][:(len(stones[i])//2)], stones[i][(len(stones[i])//2):]
+                l, r = stones[i][:(len(stones[i]) // 2)], stones[i][(len(stones[i]) // 2):]
                 ns.append(int(l))
                 ns.append(int(r))
             else:
-                ns.append(stones[i]*2024)
+                ns.append(stones[i] * 2024)
         stones = ns
     return len(stones)
 
@@ -34,14 +34,14 @@ def part2(filename, blinks):
         for x in stones:
             if x == 0:
                 ns[1] += stones[0]
-            elif len(str(x))%2 == 0:
+            elif len(str(x)) % 2 == 0:
                 x = str(x)
-                l, r = x[:len(x)//2], x[len(x)//2:]
+                l, r = x[:len(x) // 2], x[len(x) // 2:]
                 x = int(x)
                 ns[int(l)] += stones[x]
                 ns[int(r)] += stones[x]
             else:
-                ns[x*2024] = stones[x]
+                ns[x * 2024] = stones[x]
         stones = ns
     return sum(stones.values())
 
