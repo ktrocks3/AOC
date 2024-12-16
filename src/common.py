@@ -15,3 +15,5 @@ with open(file_path, 'w') as f:
     f.write(''.join(open('template').readlines()))
 with open(f'{directory}/example.txt', 'w') as f:
     f.write('')
+with open(f'{directory}/example2.txt', 'w') as f:
+    f.write('')
