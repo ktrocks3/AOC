@@ -60,8 +60,54 @@ def part1(filename):
     return (str(out)[1:-1]).replace(' ', ''), a, b, c
 
 
-def part2(filename):
-    return
+def simulate_program(a):
+    b, c, out = 0, 0, []
+    while a != 0:
+        # 2,4
+        b = a % 8
+        # 1,3
+        b ^= 3
+        # 7,5
+        c = a >> b
+        # 0,3
+        a = a >> 3
+        # 1,5
+        b ^= 5
+        # 4,1
+        b = b ^ c
+        # 5,5
+        out.append(b % 8)
+        # 3,0
+    return out, a, b, c
+
+
+def find_solutions(values, program, a, results, level):
+    val = values[-level]  # Current target output value
+    for i in range(0, 8):  # Test all possible 3-bit values (0-7)
+        test_a = a + i
+        test_out = simulate_program(test_a)[0]  # Run the program with the test A
+        if test_out[:level] == values[-level:]:  # Check if output matches the target
+            if level == len(values):  # If all digits are processed
+                results.append(test_a)
+                print(f"Found valid A: {test_a}")
+            else:  # Recurse to process the next digit
+                find_solutions(values, program, (test_a << 3), results, level + 1)
+
+
+def reverse_simulate_program(target_output):
+    results = []  # Store valid A values
+    find_solutions(target_output, [], 0, results, 1)
+    return min(results) if results else None  # Return the smallest valid A
+
+
+def part2():
+    target_output = [2, 4, 1, 3, 7, 5, 0, 3, 1, 5, 4, 1, 5, 5, 3, 0]
+    probably = reverse_simulate_program(target_output)
+
+    # Validate the reconstructed A
+    sim_out, a, b, c = simulate_program(probably)
+    assert sim_out == target_output, (sim_out, a, b, c)
+    return probably
 
 
 
@@ -76,5 +122,6 @@ if __name__ == '__main__':
     assert part1('example6.txt')[0] == "4,6,3,5,6,3,5,2,1,0", f"Received {part1('example6.txt')} for example2 on part1"
     print(f'Part 1 answer: {part1('input.txt')[0]}')
     assert part1('example7.txt')[0] == "0,3,5,4,3,0", f"Received {part1('example7.txt')} for example on part2"
-    assert part2('input.txt') > 16300095239778
-    print(f'Part 2 answer: {part2('input.txt')}')
+    assert 224548052352095 > part2() > 16300095239778
+    print(f'Part 2 answer: {part2()}')
+    assert part1('example8.txt')[0] == "2,4,1,3,7,5,0,3,1,5,4,1,5,5,3,0", f"Received {part1('example8.txt')} for example on part2"
