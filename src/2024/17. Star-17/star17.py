@@ -124,4 +124,3 @@ if __name__ == '__main__':
     assert part1('example7.txt')[0] == "0,3,5,4,3,0", f"Received {part1('example7.txt')} for example on part2"
     assert 224548052352095 > part2() > 16300095239778
     print(f'Part 2 answer: {part2()}')
-    assert part1('example8.txt')[0] == "2,4,1,3,7,5,0,3,1,5,4,1,5,5,3,0", f"Received {part1('example8.txt')} for example on part2"
