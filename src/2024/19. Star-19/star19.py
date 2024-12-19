@@ -44,13 +44,39 @@ def part1(filename):
 
 
 def part2(filename):
-    return
+    def count_ways(pattern, available, memo):
+        if pattern == "":
+            return 1  # Base case: one way to form an empty pattern
+
+        if pattern in memo:
+            return memo[pattern]
+
+        total_ways = 0
+        for towel in available:
+            if pattern.startswith(towel):
+                # Recursively calculate ways for the remaining string
+                total_ways += count_ways(pattern[len(towel):], available, memo)
+
+        memo[pattern] = total_ways
+        return total_ways
+
+    file = common(filename)
+    available = [x.strip() for x in file[0].split(',')]
+    patterns = file[2:]
+
+    total_arrangements = 0
+    memo = {}
+    for pattern in patterns:
+        arrangements = count_ways(pattern, available, memo)
+        total_arrangements += arrangements
+
+    return total_arrangements
 
 
 if __name__ == '__main__':
     assert part1('example.txt') == 6, f"Received {part1('example.txt')} for example on part1"
     # assert part1('example2.txt') == "", f"Received {part1('example2.txt')} for example2 on part1"
     print(f'Part 1 answer: {part1('input.txt')}')
-    assert part2('example.txt') == "", f"Received {part2('example.txt')} for example on part2"
-    assert part2('example2.txt') == "", f"Received {part2('example2.txt')} for example2 on part2"
+    assert part2('example.txt') == 16, f"Received {part2('example.txt')} for example on part2"
+    # assert part2('example2.txt') == "", f"Received {part2('example2.txt')} for example2 on part2"
     print(f'Part 2 answer: {part2('input.txt')}')
