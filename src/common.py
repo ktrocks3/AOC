@@ -3,7 +3,7 @@ import os  # Import os module to work with directories
 
 # Get the current year and the day difference
 year = datetime.datetime.today().year
-day = (datetime.datetime.today() - datetime.datetime(2024, 12, 1)).days + 1
+day = (datetime.datetime.today() - datetime.datetime(2025, 12, 1)).days + 1
 
 # Create the directory if it doesn't exist
 directory = f'{year}/{day}. Star-{day}'
