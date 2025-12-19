@@ -1,45 +1,16 @@
-# 🎄 Advent of Code 2024 🎅  
+# Advent of Code
 
-Welcome to my **Advent of Code 2025** repository! 🧑‍💻✨  
-Every day in December, I'll be attempting festive programming puzzles and uploading my Python solutions here. 🎁  
+This repository contains my solutions to **Advent of Code**, organized by year.
 
-## 🛠️ What's in the Stocking?  
-- **Language:** Python 🐍  
-- **Daily Solutions:** Each day brings a new problem and a new solution! Check out the folders for each star.  
-- **Festive Fun:** Clean code wrapped with some holiday cheer!  
+## Languages by Year
+- **2024** – Python  
+- **2025** – Java  
 
-## 🎶 Jingle Code, Jingle Code... 🎶  
-This repo isn't just about solving puzzles; it's about spreading holiday joy through code! Here's how you can join in:  
-1. Try the puzzles yourself on [Advent of Code](https://adventofcode.com/).  
-2. Compare our approaches—there’s no wrong way to solve them!  
-3. Star this repo ⭐ if you like what you see (Santa says sharing is caring!).  
+I use Advent of Code as a way to practice algorithmic problem-solving and improve implementation fluency in different languages.
 
-## 📅 Advent Progress  
-- [ ] Day 1: 🎅 Loading...  
-- [ ] Day 2: 🌟 Loading...  
-- [ ] Day 3: ❄️ Loading...  
-- [ ] Day 4: 🎁 Loading...  
-- [ ] Day 5: 🎄 Loading...  
-- [ ] Day 6: 🕯️ Loading...  
-- [ ] Day 7: ✨ Loading...  
-- [ ] Day 8: 🌌 Loading...  
-- [ ] Day 9: 🎐 Loading...  
-- [ ] Day 10: 🔔 Loading...  
-- [ ] Day 11: 🎶 Loading...  
-- [ ] Day 12: 🌠 Loading...  
-_(Keep checking back for daily updates!)_  
+## Structure
+- Each year has its own directory
+- Solutions are grouped by day/star
+- Input files are stored alongside or under resources (for Java)
 
-
-
-
-## 🎄 Why Do This?  
-- Spread some festive coding vibes.  
-- Sharpen my problem-solving skills.  
-- Give Python a winter workout.  
-
-## ☃️ Let's Connect!  
-Have feedback, suggestions, or just want to say "Happy Holidays"? Reach out!  
-
----
-
-Happy holidays and happy coding! 🌟  
+Some solutions may be refactored after initial completion to improve clarity or performance.
