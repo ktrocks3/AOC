@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Day01 {
     public static void main(String[] args) throws URISyntaxException, IOException {
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day1/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day1/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day01/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day01/input.txt").toURI()));
         assert part1(example) == 3;
         System.out.println("Part 1 answer: " + part1(input));
 

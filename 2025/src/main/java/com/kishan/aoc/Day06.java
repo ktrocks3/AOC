@@ -12,14 +12,14 @@ import java.util.Objects;
 public class Day06 {
 
     public static void main(String[] args) throws URISyntaxException, IOException {
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day6/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day6/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day06/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day06/input.txt").toURI()));
 
         assert Part1(example) == 4277556;
         System.out.println("Part 1: " + Part1(input));
 
-        example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day6/example.txt").toURI()));
-        input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day6/input.txt").toURI()));
+        example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day06/example.txt").toURI()));
+        input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day06/input.txt").toURI()));
         assert Part2(example) == 3263827;
         System.out.println("Part 2: " + Part2(input));
 

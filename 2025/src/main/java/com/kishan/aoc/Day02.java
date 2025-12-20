@@ -7,12 +7,11 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Objects;
 
 public class Day02 {
     public static void main(String[] args) throws URISyntaxException, IOException {
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day2/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day2/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day02/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day02/input.txt").toURI()));
 
         assert Part1(example) == 1227775554;
         System.out.println("Part 1: " + Part1(input));

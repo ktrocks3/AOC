@@ -6,7 +6,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class Day05 {
@@ -14,8 +13,8 @@ public class Day05 {
     }
 
     public static void main(String[] args) throws URISyntaxException, IOException {
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day5/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day5/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day05/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day05/input.txt").toURI()));
 
         assert Part1(example) == 3;
         System.out.println("Part 1: " + Part1(input));

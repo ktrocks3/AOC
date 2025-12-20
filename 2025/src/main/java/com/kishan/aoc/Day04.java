@@ -5,13 +5,12 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Day04 {
     public static void main(String[] args) throws URISyntaxException, IOException {
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day4/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day4/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day04/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day04/input.txt").toURI()));
 
         assert Part1(example) == 13;
         System.out.println("Part 1: " + Part1(input));

@@ -9,8 +9,8 @@ import java.util.List;
 public class Day03 {
     public static void main(String[] args) throws URISyntaxException, IOException {
 
-        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day3/example.txt").toURI()));
-        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day3/input.txt").toURI()));
+        List<String> example = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day03/example.txt").toURI()));
+        List<String> input = Files.readAllLines(Path.of(ClassLoader.getSystemResource("Day03/input.txt").toURI()));
 
         assert Part1(example) == 357;
         System.out.println("Part 1: " + Part1(input));
